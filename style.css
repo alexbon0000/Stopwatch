@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    min-height: 100vh;
+    background: #091921;
+}
+
+.clock {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    background: url(clock.png);
+    background-size: cover;
+    box-shadow: 0 -15px 15px rgba(134, 134, 134, 0.35 ),
+    0 15px 15px rgba(134, 134, 134, 0.35 );
+    border-radius: 50%;
+}
+
+.clock:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #091921;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.clock .min,
+.clock .sec,
+.cloc .msec{
+    position: absolute;
+}
+
+.clock .min, .mn{
+    width: 160px;
+    height: 160px;
+}
+.clock .sec, .sc{
+    width: 190px;
+    height: 190px;
+}
+.clock .msec, .msc{
+    width: 230px;
+    height: 230px;
+}
+
+.mn, .sc, .msc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.mn:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background-color: #6f8e9d;
+    z-index: 10;
+}
+
+.sc:before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background-color: #2b8ebb;
+    z-index: 11;
+}
+.msc:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background-color: #111212;
+    z-index: 11;
+}
+
+.btn {
+    width: 320px;
+    height: 30px;
+    position: relative;
+    top: 100px;
+    margin: auto;
+}
+.button {
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    color: black;
+  }
+  .stop {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(194, 80, 80);
+  }
+  .start {
+    background-color: rgb(113, 209, 113);
+  }
+  .clear{
+    background-color: rgb(92, 92, 192);
+  }
+  .stop:hover {
+    background-color: rgb(250, 8, 8);
+  }
+  .start:hover{
+    background-color: green;
+  }
+  .clear:hover{
+    background-color: blue;
+  }
